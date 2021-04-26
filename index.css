@@ -1,0 +1,160 @@
+body {
+  background-color: steelblue;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* overflow: hidden; */
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  padding-top: 0;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.form-control {
+  position: relative;
+  margin: 0px 40px;
+  width: 600px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  /* display: block; */
+  float: left;
+  width: 178px;
+  padding: 15px 10px;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#name, #age {
+  width: 275px;
+  margin-top: 15px;
+}
+
+#description {
+  width: 575px;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.card {
+  width: 600px;
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.monster-name {
+  margin: 0 35px 0 0;
+  color: rgb(25,50,100);
+}
+
+.monster-age {
+  font-size: .75rem;
+  color: rgb(50, 50, 100);
+}
+
+.monster-description {
+  display: none;
+  margin: 20px 0 0;
+  color: bisque;
+}
+
+.bio-toggle {
+  background-color: teal;
+  border: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(3, 0, 155);
+  font-weight: bolder;
+  font-size: 10px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.bio-toggle:focus {
+  outline: 0;
+}
+
+.card.active .monster-description {
+  display: block;
+}
+
+.card .bio-toggle .card-open {
+  color: #fff;
+  display: block;
+}
+
+.card.active .bio-toggle .card-open {
+  color: #fff;
+  display: none;
+}
+
+.card .bio-toggle .card-close {
+  color: #fff;
+  display: none;
+}
+
+.card.active .bio-toggle .card-close {
+  color: #fff;
+  display: block;
+}
